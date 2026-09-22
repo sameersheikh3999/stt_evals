@@ -1,0 +1,48 @@
+# ---- secrets -----------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.key
+credentials.json
+
+# ---- audio (child voice recordings: PII, and far too large for git) ----
+audios_selected/
+EGMA audio files - path*/
+*.m4a
+*.mp3
+*.wav
+*.ogg
+*.opus
+*.flac
+
+# ---- raw / derived data ------------------------------------------------
+*.zip
+*.xlsx
+*.xls
+gold_items_long.csv
+eval_manifest.csv
+transcripts/
+
+# ---- eval outputs ------------------------------------------------------
+eval_orf_urd/
+eval_*/
+*.out
+
+# ---- python ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- editors / OS ------------------------------------------------------
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+*.swp
